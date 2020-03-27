@@ -32,7 +32,6 @@
 <div id="clock"></div>
 <!-- 후기 -->
 
-
 <!-- 실시간 게시판 -->
 <div id="hr2">
   <p>Let's STUDY 실시간 후기</p>
