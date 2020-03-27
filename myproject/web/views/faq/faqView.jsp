@@ -14,7 +14,7 @@
 
 <div id = "faq-container">
 
-	<h2> FAQ 상세화면</h2>
+	<h2> FAQ 상세화면  테스트로 넣어보기!</h2>
 		<table id="tbl-faq">
 			<tr>
 				<th>제목</th>
