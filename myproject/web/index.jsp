@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!-- header페이지 불러오기 -->
+<!-- header페이지 불러오기 수정!-->
 <%@ include file="/views/common/header.jsp" %>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/section.css" type="text/css"/>
 
@@ -27,7 +27,7 @@
 </div>
 
 <div id="hr">
-  <i>지금 이 순간에도 적들의 책장은 넘어가고 있다.dd</i></div>
+  <i>지금 이 순간에도 적들의 책장은 넘어가고 있다.</i></div>
 <!-- 현재시간 -->
 <div id="clock"></div>
 <!-- 후기 -->
