@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!-- header페이지 불러오기 -->
+<!-- header페이지 불러오기 수정!-->
 <%@ include file="/views/common/header.jsp" %>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/section.css" type="text/css"/>
 
@@ -31,7 +31,6 @@
 <!-- 현재시간 -->
 <div id="clock"></div>
 <!-- 후기 -->
-
 
 <!-- 실시간 게시판 -->
 <div id="hr2">
