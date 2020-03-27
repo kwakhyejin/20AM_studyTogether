@@ -16,7 +16,7 @@
                         <ul class="sidemenu">
                             <li>공부인증 게시판</li>
                             <li>대나무숲</li>
-                            <li>묻고 답하기1</li>
+                            <li>묻고 답하기</li>
                         </ul>
                     </div>
                 </aside>
