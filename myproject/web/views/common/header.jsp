@@ -50,7 +50,7 @@
 	<button class="main2" type="button" data-target="#loginModalCenter" data-toggle="modal">회원가입</button>
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="main2">로그인</button>
    <%}else{ %>
-   <a id=mainlogo href="메인.html">
+   <a id=mainlogo href="<%=request.getContextPath()%>">
      <img src="<%=request.getContextPath() %>/images/logo.png" width="180px" height="100px">
   </a>
       <button class="main2">고객센터</button>

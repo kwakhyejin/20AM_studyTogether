@@ -112,12 +112,7 @@ public class LookPasswordServlet extends HttpServlet {
 	               writer.close();
 	               System.out.println("failed exception");
 	            }
-	
 			}
-
-		
-
-	
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
