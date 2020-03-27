@@ -1,0 +1,89 @@
+
+
+/* 강좌 스터디 목록 */
+#title{
+    padding-top:100px;
+    padding-right: 900px;
+    text-align: center;
+    font-weight:bolder;
+    font-size:25px;
+}
+/* 강사스터디 찾기 속성 */
+#title{
+    padding-right: 900px;
+    text-align: center;
+    font-weight: bolder;
+    font-size:25px;
+}
+
+.list_start {
+    text-align: center;
+    margin-top:80px;
+    display: flex;
+    float:left;
+}
+
+/* 이미지리스트간 속성 */
+.list_detail{
+	text-align:center;
+    display: inline-block;
+    width: 220px;
+    height: 260px;
+	border: 1px solid;
+    margin-left: 130px;
+    margin-bottom: 50px;
+    opacity: 0;
+   /*  flex:1;
+    float: left; */
+}  
+
+.list_detail:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.main_title{
+	text-align: center;
+    margin-bottom: 100px;
+    margin-top:100px;
+    padding-right:300px;
+}
+
+select{
+    height:30px;
+    width: 200px; /* 원하는 너비설정 */
+}
+.make{
+    margin-top:20px;
+    margin-right: 160px;
+}
+.make img{
+    padding-bottom: 20px;
+    /* 부엉이 이미지 아래 간격 */
+}
+
+    
+    .make img:hover{
+        transform:perspective(400px) rotateZ(30deg);
+
+    }
+  
+    .make a{
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+    text-align: right;
+    padding-left: 80px;
+    margin-left: 1000px;
+  }
+ #lectorTitle{
+ 	text-align:center;
+     padding-top: 15px;
+     font-weight: bolder;
+     font-size: 18px;
+ }
+ 
+ .pagination{
+ margin-left:600px;
+ }

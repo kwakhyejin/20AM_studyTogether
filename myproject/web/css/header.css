@@ -1,0 +1,282 @@
+/* 헤더 부분 */
+/* css 브라우저캐쉬삭제 적용 ctrl+f5 */
+
+body{
+    font-family:"Sunflower" ;
+  }
+.main{
+  background-color: white;
+  border-bottom: 1px solid silver;
+}
+.main2{
+    float:right;
+    margin-top:0px;
+    padding:10px;
+    color:black;
+    font-weight: bolder;
+ 
+}
+.main2{
+  background:white;
+  color:black;
+  border:none;
+  position:relative;
+  height:30px;
+  font-size:15px;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.main2:hover{
+  background:black;
+  color:white;
+}
+.main2:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: white;
+  transition:400ms ease all;
+}
+.main2:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.main2:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+#mainlog{
+  float:left;
+}
+.main>a{
+  text-decoration: none;
+}
+
+/* 네비게이션 간격 */
+
+.mymenu, .menu4-submenu{
+         
+  margin: 0;
+  padding:0;
+  list-style-type: none;
+
+}
+.mymenu{
+    /* margin-left:50px; */
+    /* margin-top:10px; */
+    width:100%;
+    height:60px;
+    font-size:25px;
+    font-weight: bold;
+    border-bottom: solid 1px silver;
+
+  
+}
+.mymenu ul{
+  padding-top:10px;
+}
+.mymenu>li{
+  background-color: white;
+  float:left;
+  width:25%;
+  height:100%;
+  /* line-height: 50px; */
+  text-align: center;
+
+  /* border:1px solid red; */
+
+ 
+
+}
+a{
+    text-decoration: none;
+}
+.mymenu>li>a{
+  text-decoration: none;
+  font-size:20px;
+  display:block;
+  padding-top:20px;
+  padding-bottom:0px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color:black;
+  /* border-right:2px solid rgba(0,0,0,0.15); */
+  /* border-bottom: 1px solid rgba(0,0,0,0.15); */
+  /* border-top: 1px solid rgba(0,0,0,0.15); */
+  text-shadow: 1px 1px 1px blue(0,0,0,0.2);
+  padding-bottom:10px;
+}
+
+.mymenu>li:nth-child(1)>a{
+  border-left:1px solid  rgba(0,0,0,0.15);
+}
+.menu4-submenu{
+  width:335px;
+  padding-left:0px;
+  position:absolute;
+  opacity: 0;
+  visibility: hidden;
+  border:1px solid silver;
+  text-align: center;
+  background-color:white;
+  color:black;
+  position: relative;
+  z-index: 1;
+}.menu4-submenu>li:hover{
+  background-color: silver;
+}
+.menu4-submenu>li{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.menu4-submenu>li>a{
+  text-decoration: none;
+  color:black;
+}
+/* .menu4-submenu>li:nth-child(1){
+    padding-top: 10px;
+} */
+
+.mymenu>li:hover .menu4-submenu{
+  opacity: 1;
+  visibility:visible;
+}
+.jbFixed {
+background-color: red;
+border:1px solid silver;
+z-index: 1;
+position: fixed;
+top: 0px;
+
+}
+
+/* ==================로그인================== */
+
+      /* Bordered form */
+      .modal-content {
+        border: 3px solid #f1f1f1;
+        height: auto;
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 30%; /* Could be more or less, depending on screen size */
+      }
+      
+      /* 입력 창 스타일 */
+      input[type=text], input[type=password]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      /* 로고 사진 설정 */
+      form>div>#loginLogo{
+        width: 200px;
+        height: 100px;
+      }
+      /*버튼 스타일 */
+      .form-button{
+        /* background-color: red; */
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      button:hover {
+        opacity: 0.8;
+      }
+      
+      /* Center the image and position the close button */
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+      }
+      
+      .containerlogin {
+        padding: 16px;
+      }
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%;  /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+      }
+      
+      /* (x) 닫기 버튼 */
+      .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: red;
+        cursor: pointer;
+      }
+      
+      /* 로그인 화면 켜질 때 애니매니션 */
+      .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+      }
+      
+      @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+      }
+        
+      @keyframes animatezoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+      }
+      /* 로그인 끝 */
+      
+      
+      /* 비밀번호 찾기 */
+		.modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+    
+        /* Modal Content/Box */
+        .modal-content2 {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%; /* Could be more or less, depending on screen size */                          
+        }
